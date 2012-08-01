@@ -1,0 +1,15 @@
+//= require jstree/vakata.js
+//= require jstree/jstree.js
+//= require jstree/jstree.checkbox.js
+//= require jstree/jstree.contextmenu.js
+//= require jstree/jstree.dnd.js
+//= require jstree/jstree.hotkeys.js
+//= require jstree/jstree.html.js
+//= require jstree/jstree.json.js
+//= require jstree/jstree.rules.js
+//= require jstree/jstree.sort.js
+//= require jstree/jstree.state.js
+//= require jstree/jstree.themes.js
+//= require jstree/jstree.ui.js
+//= require jstree/jstree.unique.js
+//= require jstree/jstree.xml.js
