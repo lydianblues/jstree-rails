@@ -55,3 +55,4 @@ cp $SRC_DIR/src/themes/default/*.css \
 cp $SRC_DIR/src/themes/default-rtl/*.css \
   $ASSET_DIR/stylesheets/jstree/themes/default-rtl
 
+(cd $SRC_DIR && tar cf - docs ) | tar xf -
