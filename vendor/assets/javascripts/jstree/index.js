@@ -13,3 +13,4 @@
 //= require jstree/jstree.ui.js
 //= require jstree/jstree.unique.js
 //= require jstree/jstree.xml.js
+//= require jstree/jstree.helpers.js

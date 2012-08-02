@@ -9,6 +9,9 @@ SRC_DIR=/opt/gems/jstree
 # Everything that we copy from the original jstree distribution goes here.
 ASSET_DIR=./vendor/assets
 
+# Additional plugins that are not part of the 'official' JsTree distribution.
+PLUGINS_DIR=./plugins
+
 rm -rf $ASSET_DIR
 mkdir -p $ASSET_DIR/stylesheets/jstree/themes/default
 mkdir -p $ASSET_DIR/stylesheets/jstree/themes/default-rtl
@@ -17,6 +20,8 @@ mkdir -p $ASSET_DIR/images/jstree/themes/default-rtl
 mkdir -p $ASSET_DIR/javascripts/jstree
 
 cp $SRC_DIR/src/*.js $ASSET_DIR/javascripts/jstree
+
+cp $PLUGINS_DIR/* $ASSET_DIR/javascripts/jstree
 
 # Caution, the order of these matters.
 cat > $ASSET_DIR/javascripts/jstree/index.js <<__EOF__
@@ -35,6 +40,7 @@ cat > $ASSET_DIR/javascripts/jstree/index.js <<__EOF__
 //= require jstree/jstree.ui.js
 //= require jstree/jstree.unique.js
 //= require jstree/jstree.xml.js
+//= require jstree/jstree.helpers.js
 __EOF__
 
 # You will need this somewhere in your javascript to
