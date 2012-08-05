@@ -19,8 +19,13 @@ mkdir -p $ASSET_DIR/images/jstree/themes/default
 mkdir -p $ASSET_DIR/images/jstree/themes/default-rtl
 mkdir -p $ASSET_DIR/javascripts/jstree
 
+#
+# By design, plugins modified by Quosap overwrite those
+# in the original distribution.  We can't simply create
+# a new contextmenu plugin with a different name, for example,
+# because the name "contextmenu" is referred to in vakata.
+#
 cp $SRC_DIR/src/*.js $ASSET_DIR/javascripts/jstree
-
 cp $PLUGINS_DIR/* $ASSET_DIR/javascripts/jstree
 
 # Caution, the order of these matters.
