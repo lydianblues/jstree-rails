@@ -113,6 +113,27 @@
             items : function (o) { // Could be an object directly 
                 // TODO: in "_disabled" call this._check()
                 return { 
+		    "share" : {
+			"separator_before": false,
+                        "separator_after": false,
+                        "label": "Share",
+                        "action": function(data) { 
+                            var inst = $.jstree._reference(data.reference),
+                                obj = inst.get_node(data.reference);
+			    inst.share_node(obj);
+			  // share or unshare  
+		         }
+		    },
+		    "send" : {
+			"separator_before": false,
+                        "separator_after": true,
+                        "label": "Send",
+                        "action": function(data) { 
+                            var inst = $.jstree._reference(data.reference),
+                                obj = inst.get_node(data.reference);
+			    inst.send_node(obj);
+                        }
+		    },
                     "create" : {
                         "separator_before": false,
                         "separator_after": true,
