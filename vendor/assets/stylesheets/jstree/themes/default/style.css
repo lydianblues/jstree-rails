@@ -5,16 +5,16 @@
  */
 
 .jstree-default li, 
-.jstree-default ins { background-image:url("d.png"); background-repeat:no-repeat; background-color:transparent; }
+.jstree-default ins { background-image:url("jstree/themes/default/d.png"); background-repeat:no-repeat; background-color:transparent; }
 .jstree-default li { background-position:-90px 0; background-repeat:repeat-y; }
 .jstree-default li.jstree-last { background:transparent; }
 .jstree-default .jstree-open > .jstree-ocl { background-position:-72px 0; }
 .jstree-default .jstree-closed > .jstree-ocl { background-position:-54px 0; }
 .jstree-default .jstree-leaf > .jstree-ocl { background-position:-36px 0; }
-.jstree-default .jstree-loading > .jstree-ocl { background:url("throbber.gif") center center no-repeat !important; }
+.jstree-default .jstree-loading > .jstree-ocl { background:url("jstree/themes/default/throbber.gif") center center no-repeat !important; }
 
-.jstree-default .jstree-hovered { background:#e7f4f9; border:1px solid #d8f0fa; padding:0 2px 0 1px; }
-.jstree-default .jstree-clicked { background:#beebff; border:1px solid #99defd; padding:0 2px 0 1px; }
+.jstree-default .jstree-hovered { background:#e7f4f9; border:1px solid #d8f0fa; padding:0 2px 0 1px; border-radius:2px; }
+.jstree-default .jstree-clicked { background:#beebff; border:1px solid #99defd; padding:0 2px 0 1px; border-radius:2px; }
 .jstree-default a .jstree-themeicon { background-position:-56px -19px; }
 
 .jstree-default.jstree-focused { background:#ffffee; }
@@ -39,9 +39,9 @@
 .jstree-default a:hover .jstree-undetermined { background-position:-20px -37px; }
 
 #jstree-dnd.jstree-default ins { background:transparent; }
-#jstree-dnd.jstree-default .jstree-ok { background:url("d.png") -2px -53px no-repeat; }
-#jstree-dnd.jstree-default .jstree-er { background:url("d.png") -18px -53px no-repeat; }
-/*#jstree-marker.jstree-default { background:url("d.png") -41px -57px no-repeat !important; text-indent:-100px; }*/
+#jstree-dnd.jstree-default .jstree-ok { background:url("jstree/themes/default/d.png") -2px -53px no-repeat; }
+#jstree-dnd.jstree-default .jstree-er { background:url("jstree/themes/default/d.png") -18px -53px no-repeat; }
+/*#jstree-marker.jstree-default { background:url("jstree/themes/default/d.png") -41px -57px no-repeat !important; text-indent:-100px; }*/
 
 .jstree-default .jstree-locked a { color:silver; cursor:default; }
 
@@ -63,11 +63,11 @@
 .jstree-default ins,
 #vakata-dragged.jstree-default .jstree-invalid, 
 #vakata-dragged.jstree-default .jstree-ok, 
-#jstree-marker.jstree-default { _background-image:url("d.gif"); }
+#jstree-marker.jstree-default { _background-image:url("jstree/themes/default/d.gif"); }
 .jstree-default .jstree-open .jstree-ocl { _background-position:-72px 0; }
 .jstree-default .jstree-closed .jstree-ocl { _background-position:-54px 0; }
 .jstree-default .jstree-leaf .jstree-ocl { _background-position:-36px 0; }
-.jstree-default .jstree-loading .jstree-ocl { _background:url("throbber.gif") center center no-repeat !important; }
+.jstree-default .jstree-loading .jstree-ocl { _background:url("jstree/themes/default/throbber.gif") center center no-repeat !important; }
 .jstree-default a ins.jstree-themeicon { _background-position:-56px -19px; }
 /*
 #vakata-contextmenu.jstree-default-context ins { _display:none; }
